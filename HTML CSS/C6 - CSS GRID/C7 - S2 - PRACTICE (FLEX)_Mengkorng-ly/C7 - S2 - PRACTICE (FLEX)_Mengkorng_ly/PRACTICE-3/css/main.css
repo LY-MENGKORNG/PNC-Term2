@@ -1,0 +1,117 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+.form-container {
+    width: 55%;
+    padding: 10px;
+    border-radius: 5px;
+    background: #fff;
+    display: flex;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+}
+.form-left { 
+    flex:2;
+}
+.form-group {
+    margin-top: 10px;
+}
+.form-header,
+.form-title {
+    padding: 10px;
+    text-align: center;
+}
+.form-title h2 {
+    margin: 0;
+    text-transform: uppercase;
+}
+.form-header img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    border:2px solid #712671;
+}
+input {
+    padding: 10px;
+    box-sizing: border-box;
+}
+input[type="text"] {
+    width: 49%;
+}
+input[type="password"],
+input[type="email"] {
+    width: 99%;
+}
+.form-right {
+    flex:1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    border-left: 1px dotted ;
+}
+button {
+    padding: 10px 25px;
+    border:none;
+    cursor: pointer;
+    background: #3838d1;
+    color: #fff;
+    font-size: 16px;
+    margin-right: 7px;
+}
+.btn {
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+    margin-top: 12px;
+    justify-content: space-between;
+}
+.btn a {
+    text-decoration: none;
+    font-weight: 600;
+    color: rgb(52, 63, 176);
+}
+.logo img {
+    width: 100%;
+}
+
+/* ----------- */
+@media (max-width: 768px) {
+    .form-container {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+    .form-right {
+        border-bottom: 2px solid gray;
+        border-left: none;
+    }
+    .logo img {
+        width: 50%;
+    }
+}
+@media (max-width: 600px) {
+    p {
+        display: none;
+    }
+    .form-group{
+        display: flex;
+        flex-wrap: wrap;
+        gap: 10px;
+    }
+    input[type="text"] {
+        width: 100%;
+    }
+    .btn{
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: center;
+    }
+    button {
+        width: 100%;
+    }
+}

@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>homework</title>
+    <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+    <form action="#">
+        <div class="form-header">
+            <h2>Creat Account</h2>
+        </div>
+        <div class="form-body">
+            <div class="user-name">
+                <div class="user-firstname">
+                    <label for="firstname">First name*</label>
+                    <input type="text" id="firstname" name="firstname" placeholder="enter your first name">
+                </div>
+                <div class="user-lastname">
+                    <label for="lastname">Last name*</label>
+                    <input type="text" id="lastname" name="lastname" placeholder="enter your last name">
+                </div>
+            </div>
+            <div class="user-email">
+                <label for="email">Email*</label>
+                <input type="email" id="email" name="email" placeholder="enter your email">
+            </div>
+            <div class="user-passwords">
+                <div class="user-password">
+                    <label for="password">Password*</label>
+                    <input type="password" id="password" name="password" placeholder="enter your password">
+                </div>
+                <div class="user-confirm-password">
+                    <label for="confirm-password">Confirm Password*</label>
+                    <input type="password" id="confirm-password" name="confirm-password" placeholder="enter your password again">
+                </div>
+            </div>
+            <div class="user-infos">
+                <div class="user-gender">
+                    <label for="gender">Gender:</label>
+                    <div class="user-genders" >
+                        <input type="radio" name="gender" id="gender" value="male"> Male
+                        <input type="radio" name="gender" id="gender" value="female"> Female
+                    </div>
+                </div>
+                <div class="user-hobby">
+                    <label for="hobby">Hobbies:</label>
+                    <div class="user-hobbies">
+                        <input type="checkbox" name="hobby" id="hobby" value="music"> Music
+                        <input type="checkbox" name="hobby" id="hobby" value="sports"> Sports
+                        <input type="checkbox" name="hobby" id="hobby" value="travel"> Travel
+                        <input type="checkbox" name="hobby" id="hobby" value="movies"> Movies
+
+                    </div>
+                </div>
+            </div>
+            <div class="user-more-infos">
+                <div class="user-financial">
+                    <label for="careers">Source of Income</label>
+                    <select id="careers">
+                        <option selected disabled>Select one career</option>
+                        <option name="career" value="software developer">Software Developer</option>
+                        <option name="career" value="architect">Architect</option>
+                        <option name="career" value="accountant">Accountant</option>
+                        <option name="career" value="electrician">Electrician</option>
+                        <option name="career" value="management">Management</option>
+                        <option name="career" value="civil engineer">Civil Engineer</option>
+                    </select>
+                </div>
+                <div class="user-income">
+                    <label for="income">Income</label>
+                    <div class="range-income">
+                        <input id="income" type="range" min="0" max="20000">
+                        <span>20K</span>
+                    </div>
+                </div>
+            </div>
+            <div class="user-info">
+                <div class="user-profile">
+                    <label for="user-profile">Upload Profile Picture</label>
+                    <input type="file" name="user-profile" id="user-profile">
+                </div>
+                <div class="user-age">
+                    <label for="age">Age</label>
+                    <input type="number" name="age" id="age" placeholder="enter your age">
+                </div>
+            </div>
+            <div class="user-bio">
+                <label for="bio">Bio</label>
+                <textarea name="" id="bio" cols="30" rows="10"></textarea>
+            </div>
+        </div>
+        <div class="form-footer">
+            <button id="create-btn" type="submit">Create</button>
+        </div>
+    </form>
+</body>
+</html>

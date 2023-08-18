@@ -1,0 +1,16 @@
+
+@media (max-width: 1920px) {
+    body {
+        background: orange;
+    }
+}
+@media (max-width: 1024px) {
+    body {
+        background: purple;
+    }
+}
+@media (max-width: 720px) {
+    body {
+        background: green;
+    }
+}

@@ -1,0 +1,20 @@
+
+
+
+@media (min-width: 470px) {
+    body {
+        background: green;
+    }
+}
+
+@media (min-width: 720px) {
+    body {
+        background: purple;
+    }
+}
+
+@media (min-width: 1024px) {
+    body {
+        background: orange;
+    }
+}

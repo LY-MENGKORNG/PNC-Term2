@@ -1,0 +1,20 @@
+Thoery:
+  1. HTML tags
+    - heading tags (h1, h2...)
+    - p
+    - strong
+    - div
+    - span
+    - ...
+
+  2. CSS
+     - How many ways to use CSS Style?
+       (inline, internal, external)
+     - Properties ( color, background, font-size, font-family, font-weight, ...)
+     - introduce a bit (margin-top, padding)
+   
+Practices
+   - OL / UL
+   - Hyperlink
+   - CSS style ..
+   - class id

@@ -1,0 +1,302 @@
+@import url('https://fonts.googleapis.com/css2?family=Gemunu+Libre&family=Inconsolata:wght@500&family=Montserrat:wght@500&family=Noto+Sans+Vithkuqi:wght@500&display=swap');
+* {
+    margin: 0;padding: 0;font-family: Arial, Helvetica, sans-serif;
+    list-style-type: none;text-decoration: none;outline: none;border: none;
+}
+body {
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
+/* --Navbar-- */
+nav {
+    position: sticky;
+    top: 0;
+    box-shadow: 0 3px 2px -2px rgba(128, 128, 128, 0.717);
+    z-index: 1;
+    background-color: #fff;
+    display: grid;
+    grid-template: 1fr / 35% 65%;
+    padding: 25px 80px;
+}
+.logo {
+    grid-column: 1/2;
+    font-size: 30px;
+    font-weight: 700;
+    color: darkblue;
+}
+.menu {
+    display: grid;
+    grid-template-rows: 1fr;
+}
+ul {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    justify-content: space-evenly;
+}
+li a {
+    font-size: 18px;
+}
+/* --header-- */
+header {
+    background-image: url(unity.jpg);
+    background-position: 0;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 600px;
+    display: grid;
+    grid-template: 20% 40% 40% / 1fr 1fr 0.5fr;
+}
+.header-content {
+    position: relative;
+    margin-left: 80px;
+    grid-row: 2/3;
+    display: grid;
+    gap: 15px;
+    grid-template: 2fr 1fr 1fr / 1fr;
+}
+.quote {
+    font-size: 40px;
+    font-weight: 600;
+    font-family: 'Montserrat', sans-serif;
+    color: white;
+}
+.description {
+    color: white;
+}
+.btn {
+    position: relative;
+    display: grid;
+    grid-template: 1fr / 1fr;
+    height: 55px;
+    align-items: center;
+}
+.btn input[type = text] {
+    height: 90%;
+    border-radius: 35px;
+    padding-left: 25px;
+    font-size: 18px;
+}
+.btn button {
+    position: absolute;
+    right: 2px;
+    height: 81%;
+    border-radius: 35px;
+    background-color: lightseagreen;
+    width: 30%;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+}
+.btn button:hover {
+    background-color: rgb(30, 197, 189);
+    box-shadow: 0 0 2em teal;
+}
+.blur {
+    background: linear-gradient(155deg, rgba(34, 39, 190, 0.696),rgba(255, 0, 0, 0.416) );
+    height: 600px;
+    position: absolute;
+    width: 100%;
+}
+
+/* --container-- */
+.container {
+    display: grid;
+}
+.product {
+    grid-row: 1/2;
+    background-color: rgb(241, 241, 241);
+    display: grid;
+    grid-template: 1fr / repeat(2, 1fr);
+    gap: 25px;
+    padding: 80px;
+}
+.left {
+    grid-column: 1/2;
+    grid-row: 1/2;
+    display: grid;
+    grid-template: repeat(2,1fr) / repeat(2, 1fr);
+    gap: 25px;
+}
+.box {
+    box-shadow: 0 0 1em rgba(33, 31, 136, 0.269);
+    height: 250px;
+    background-color: #fff;
+    border-radius: 15px;
+    display: grid;
+    align-content: center;
+    gap: 15px;
+    text-align: center;
+}
+.box i {
+    color: teal;
+}
+.box h2 {
+    color: #2222d4;
+    font-family: 'Montserrat', sans-serif;
+}
+.right {
+    grid-column: 2/3;
+    grid-row: 1/2;
+    display: grid;
+    grid-template-rows: 40% 50% 10%;
+    padding:35px 25px;
+}
+.right span {
+    font-size: 18px;
+}
+.button {
+    display: grid;
+    grid-template: 1fr / 1fr;
+    align-content: end;
+}
+.bottom button {
+    padding:15px 40px;
+    border-radius: 25px;
+    background-color: teal;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+}
+.bottom button:hover {
+    background-color: rgb(56, 232, 255);
+    box-shadow: 0 0 2em rgba(56, 232, 255, 0.77);
+}
+.brand {
+    grid-row: 2/3;
+    display: grid;
+    grid-template: repeat(2, 1fr) / 1fr;
+    padding: 50px 80px;
+    gap: 30px;
+}
+.brand-top {
+    grid-row: 1/2;
+    text-align: center;
+    display: grid;
+    gap: 30px;
+}
+.brand-bottom {
+    grid-row: 2/3;
+    display: grid;
+    grid-template: 1fr / repeat(5, 1fr);
+    align-items: center;
+    text-align: center;
+}
+.brand-bottom img {
+    width: 50%;
+}
+.gatogery {
+    grid-row: 3/4;
+    display: grid;
+    background-color: #f1f1f1;
+    grid-template: 0.5fr 1fr /  1fr;
+    padding: 80px;
+}
+.gatogery h2 {
+    grid-row: 1/2;
+}
+.group-gatogeries {
+    grid-row: 2/3;
+    display: grid;
+    grid-template: repeat(2, 1fr) / repeat(3, 1fr);
+    gap: 30px;
+}
+.gatogery-content {
+    display: grid;
+    gap: 15px;
+    padding: 10px;
+    transition: 0.2s;
+    cursor: pointer;
+    border-radius: 10px;
+}
+.gatogery-content:hover {
+    box-shadow: 0 0 2em gray;
+    background-color: #fff;
+}
+.gatogery-content span {
+    color: rgb(80, 80, 80);
+}
+.gatogery-content i {
+    background-color: #fff;
+    width: 30px;
+    height: 30px;
+    display: grid;
+    text-align: center;
+    align-items: center;
+    border-radius: 50%;
+    background-color: teal;
+    color: white;
+}
+.ceo {
+    grid-row: 4/5;
+    display: grid;
+    grid-template: 1fr / 55% 45%;
+    padding: 40px 80px;
+}
+.ceo .content {
+    display: grid;
+    grid-template: 1fr / 1fr;
+    padding: 50px 0px;
+}
+.content .info {
+    display: grid;
+}
+.ceo .profile {
+    display: grid;
+    padding: 50px 0px;
+}
+.profile .bg-image {
+    position: relative;
+    margin-left: auto;
+    width: 50%;
+    height: 350px;
+    padding: 0px 40px 0px 0px;
+}
+.profile .Myimage {
+    position: absolute;
+    bottom: 30px;
+    right: 50px;
+    width: 100%;
+    height: 100%;
+    background-image: url(mengkorngly.jpg);
+    background-size: cover;
+    background-position-x: center;
+    box-shadow: 40px 30px teal;
+}
+.numberofPeople {
+    grid-row: 5/6;
+    display: grid;
+    grid-template: 1fr / repeat(4, 1fr);
+    justify-content: center;
+    padding: 60px 0px;
+}
+.number {
+    display: grid;
+    justify-content: center;
+}
+.number h1, .number h3, .number span {
+    font-family: 'Montserrat', sans-serif;
+    display: grid;
+}
+.number h1{
+    font-size: 45px;
+    color: #2222d4;
+}
+.number h3 {
+    color: #2222d4;
+}
+.vdo {
+    grid-row: 6/7;
+    height: 700px;
+    background: lightgreen;
+}
+.sumit {
+    grid-row: 6/7;
+    height: 400px;
+    /* background: tomato; */
+}
+/* --footer-- */
+footer {
+
+}

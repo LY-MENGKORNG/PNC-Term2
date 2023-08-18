@@ -1,0 +1,14 @@
+Instruction:
+
+Using all class in HTML
+Write css to display result like image: result_4.png
+
+CSS Properties you should know:
+ - padding: 10px;
+ - margin-top: 10px;
+ - border-radius: 7px;
+ - border:none;
+ - cursor: pointer;
+ - background: 
+ - font-family: sans-serif;
+ - color:
