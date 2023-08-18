@@ -158,6 +158,7 @@ header {
     color: white;
     font-size: 16px;
     cursor: pointer;
+    transition: 0.2s;
 }
 .bottom button:hover {
     background-color: rgb(56, 232, 255);
@@ -229,6 +230,7 @@ header {
     color: white;
 }
 .ceo {
+    background-color: #f1f1f1;
     grid-row: 4/5;
     display: grid;
     grid-template: 1fr / 55% 45%;
@@ -287,16 +289,55 @@ header {
     color: #2222d4;
 }
 .vdo {
+    background-color: #f1f1f1;
     grid-row: 6/7;
-    height: 700px;
-    background: lightgreen;
+    padding: 100px;
+    display: grid;
+    text-align: center;
+    gap: 50px;
 }
-.sumit {
-    grid-row: 6/7;
-    height: 400px;
-    /* background: tomato; */
+.vdo-content {
+    display: grid;
+    gap: 15px;
+}
+.submit {
+    grid-row: 7/8;
+    display: grid;
+    background: linear-gradient(to bottom, darkblue, lightgreen);
+    padding: 80px;
+    gap: 30px;
+    text-align: center;
+}
+.sumit-btn {
+    width: 10%;
+    padding: 10px;
+    border-radius: 20px;
+    color: white;
+    border: 2px solid white;
+    background: #00000000;
+    cursor: pointer;
+    margin: auto;
+}
+.sumit-btn:hover {
+    box-shadow: 0 0 2em lightblue;
+}
+input[type = email]{
+    width: 30%;
+    padding: 10px;
+    border-radius: 20px;
+    text-align: center;
+    margin: auto;
 }
 /* --footer-- */
 footer {
-
+    display: grid;
+    grid-template: 1fr / repeat(6, 1fr);
+    padding: 80px;
+}
+.foot-logo {
+    font-size: 30px;
+    font-weight: 750;
+    color: darkblue;
+}
+.foot-logo span {
 }
